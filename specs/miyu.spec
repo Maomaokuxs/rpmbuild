@@ -8,8 +8,6 @@ URL:            https://github.com/SHORiN-KiWATA/Miyu
 
 Source0:        https://github.com/SHORiN-KiWATA/Miyu/releases/download/v%{version}/miyu-%{version}-1-x86_64.pkg.tar.zst
 
-BuildArch:      x86_64
-
 %description
 Miyu 是一个活在终端里的二次元少女 AI 助手，由大模型驱动。
 
