@@ -1,0 +1,20 @@
+# 大二进制源文件不进 git（构建前手动放入 ~/rpmbuild/SOURCES/）
+*.tar.gz
+*.tgz
+*.jar
+*.rpm
+*.zst
+*.zip
+*.AppImage
+*.appimage
+
+# 本地构建产物
+dist/
+release/
+BUILD*/
+RPMS/
+SRPMS/
+
+# 系统文件
+*~
+.swp
