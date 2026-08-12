@@ -57,5 +57,8 @@ desktop-file-validate %{buildroot}%{_datadir}/applications/%{name}.desktop
 %{_datadir}/icons/hicolor/256x256/apps/%{name}.png
 
 %changelog
+* Wed Aug 12 2026 Maomaokuxs <biyuanh@qq.com> - 2.2.7-1
+- Test webhook auto-rebuild
+
 * Sun Jul 26 2026 Maomaokuxs <biyuanh@qq.com> - 2.2.7-1
 - Update to 2.2.7
