@@ -4,12 +4,12 @@
 
 Name:           splayer-next
 Version:        1.0.0
-Release:        1.dev%{?dist}
+Release:        2%{?dist}
 Summary:        Cross-platform desktop music player with rich lyric support
 
 License:        AGPL-3.0-only
 URL:            https://github.com/SPlayer-Dev/SPlayer-Next
-Source0:        splayer-next-%{version}-linux-x64.tar.gz
+Source0:        https://github.com/SPlayer-Dev/SPlayer-Next/releases/download/v%{version}/splayer-next-%{version}-x64.tar.gz
 Source1:        https://raw.githubusercontent.com/Maomaokuxs/rpmbuild/main/assets/splayer-next-icon.png
 Source2:        https://raw.githubusercontent.com/Maomaokuxs/rpmbuild/main/assets/splayer-next-LICENSE
 
@@ -39,7 +39,8 @@ cp %{SOURCE2} LICENSE
 mkdir -p %{buildroot}%{_libdir}/%{name} %{buildroot}%{_bindir}
 mkdir -p %{buildroot}%{_datadir}/applications
 mkdir -p %{buildroot}%{_datadir}/icons/hicolor/256x256/apps
-tar xzf %{SOURCE0} -C %{buildroot}%{_libdir}/%{name}
+
+tar xzf %{SOURCE0} -C %{buildroot}%{_libdir}/%{name} --strip-components=1
 
 ln -sf %{_libdir}/%{name}/SPlayer-Next %{buildroot}%{_bindir}/%{name}
 
@@ -73,5 +74,5 @@ fi
 %{_datadir}/icons/hicolor/*/apps/%{name}.png
 
 %changelog
-* Sun Jul 26 2026 Maomaokuxs <biyuanh@qq.com> - 1.0.0-1.dev
-- Pre-built binary from dev branch source
+* Wed Aug 12 2026 Maomaokuxs <biyuanh@qq.com> - 1.0.0-2
+- Repackage official upstream v1.0.0 x64 tar.gz
