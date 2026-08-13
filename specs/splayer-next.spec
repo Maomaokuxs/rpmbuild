@@ -10,8 +10,8 @@ Summary:        Cross-platform desktop music player with rich lyric support
 License:        AGPL-3.0-only
 URL:            https://github.com/SPlayer-Dev/SPlayer-Next
 Source0:        https://github.com/SPlayer-Dev/SPlayer-Next/releases/download/v%{version}/splayer-next-%{version}-x64.tar.gz
-Source1:        https://raw.githubusercontent.com/Maomaokuxs/rpmbuild/main/assets/splayer-next-icon.png
-Source2:        https://raw.githubusercontent.com/Maomaokuxs/rpmbuild/main/assets/splayer-next-LICENSE
+Source1:        https://raw.githubusercontent.com/Maomaokuxs/rpmbuild/main/assets/splayer-next/splayer-next-icon.png
+Source2:        https://raw.githubusercontent.com/Maomaokuxs/rpmbuild/main/assets/splayer-next/splayer-next-LICENSE
 
 BuildRequires:  desktop-file-utils
 

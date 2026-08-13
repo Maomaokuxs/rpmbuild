@@ -10,7 +10,7 @@ Summary:        Kazumi 应用
 License:        Unknown
 URL:            https://github.com/Predidit/Kazumi
 Source0:        https://github.com/Predidit/Kazumi/releases/download/2.2.7/Kazumi_linux_2.2.7_amd64.tar.gz
-Source1:        https://raw.githubusercontent.com/Maomaokuxs/rpmbuild/main/assets/kazumi-icon.png
+Source1:        https://raw.githubusercontent.com/Maomaokuxs/rpmbuild/main/assets/kazumi/kazumi-icon.png
 
 BuildRequires:  desktop-file-utils
 BuildRequires:  chrpath

@@ -10,7 +10,7 @@ Summary:        Splayer 应用
 License:        Unknown
 URL:            https://github.com/SPlayer-Dev/SPlayer
 Source0:        https://github.com/SPlayer-Dev/SPlayer/releases/download/v3.1.1/splayer-3.1.1-x64.tar.gz
-Source1:        https://raw.githubusercontent.com/Maomaokuxs/rpmbuild/main/assets/splayer-icon.png
+Source1:        https://raw.githubusercontent.com/Maomaokuxs/rpmbuild/main/assets/splayer/splayer-icon.png
 
 BuildRequires:  desktop-file-utils
 BuildRequires:  chrpath

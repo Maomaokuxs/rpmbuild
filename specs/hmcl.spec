@@ -8,7 +8,7 @@ Summary:        Hmcl 应用
 License:        Unknown
 URL:            https://github.com/HMCL-dev/HMCL
 Source0:        https://github.com/HMCL-dev/HMCL/releases/download/v3.16.3/HMCL-3.16.3.jar
-Source1:        https://raw.githubusercontent.com/Maomaokuxs/rpmbuild/main/assets/hmcl-icon.png
+Source1:        https://raw.githubusercontent.com/Maomaokuxs/rpmbuild/main/assets/hmcl/hmcl-icon.png
 Requires:       java
 BuildRequires:  desktop-file-utils
 BuildRequires:  chrpath

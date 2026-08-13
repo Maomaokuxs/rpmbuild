@@ -10,7 +10,7 @@ Summary:        Bilibili 应用
 License:        Unknown
 URL:            https://github.com/msojocs/bilibili-linux
 Source0:        https://github.com/msojocs/bilibili-linux/releases/download/v1.18.0-1/bilibili-v1.18.0-1-x64.tar.gz
-Source1:        https://raw.githubusercontent.com/Maomaokuxs/rpmbuild/main/assets/bilibili-icon.png
+Source1:        https://raw.githubusercontent.com/Maomaokuxs/rpmbuild/main/assets/bilibili/bilibili-icon.png
 
 BuildRequires:  desktop-file-utils
 BuildRequires:  chrpath
