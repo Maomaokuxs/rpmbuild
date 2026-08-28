@@ -11,6 +11,7 @@ Source0:        https://github.com/luisbocanegra/kde-material-you-colors/archive
 
 BuildArch:      noarch
 BuildRequires:  python3-devel
+BuildRequires:  python3-pip
 BuildRequires:  python3-setuptools
 BuildRequires:  python3-wheel
 
