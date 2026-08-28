@@ -18,7 +18,7 @@ BuildRequires:  python3-wheel
 Requires:       python3-dbus
 Requires:       python3-numpy
 Requires:       python3-pillow
-Requires:       python3-magic
+Requires:       python3-file-magic
 Requires:       python3-gobject
 Requires:       python3-materialyoucolor
 
