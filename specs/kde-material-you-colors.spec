@@ -1,0 +1,43 @@
+%global debug_package %{nil}
+
+Name:           kde-material-you-colors
+Version:        2.2.0
+Release:        1%{?dist}
+Summary:        Automatic Material You color scheme generator for KDE Plasma
+
+License:        GPL-3.0-or-later
+URL:            https://github.com/luisbocanegra/kde-material-you-colors
+Source0:        https://github.com/luisbocanegra/kde-material-you-colors/archive/refs/tags/v%{version}.tar.gz
+
+BuildArch:      noarch
+BuildRequires:  python3-devel
+BuildRequires:  python3-setuptools
+
+Requires:       python3-dbus
+Requires:       python3-numpy
+Requires:       python3-pillow
+Requires:       python3-magic
+Requires:       python3-gobject
+Requires:       python3-materialyoucolor
+
+%description
+Automatic color scheme generator from your wallpaper for KDE Plasma,
+powered by Google's Material You color utilities. Generates light and
+dark themes for Plasma, Konsole, and pywal.
+
+%prep
+%setup -q -n kde-material-you-colors-%{version}
+
+%build
+
+%install
+python3 setup.py install --root=%{buildroot} --prefix=%{_prefix} --optimize=1
+
+%files
+%{_bindir}/kde-material-you-colors
+%{python3_sitelib}/kde_material_you_colors/
+%{python3_sitelib}/kde_material_you_colors-%{version}-py*.egg-info/
+
+%changelog
+* Thu Aug 28 2026 Maomaokuxs <biyuanh@qq.com> - 2.2.0-1
+- Initial package
