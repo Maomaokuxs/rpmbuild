@@ -39,7 +39,7 @@ dark themes for Plasma, Konsole, and pywal.
 %files
 %{_bindir}/kde-material-you-colors
 %{python3_sitelib}/kde_material_you_colors/
-%{python3_sitelib}/kde_material_you_colors-%{version}-py*.egg-info/
+%{python3_sitelib}/kde_material_you_colors-%{version}*.dist-info/
 
 %changelog
 * Thu Aug 28 2026 Maomaokuxs <biyuanh@qq.com> - 2.2.0-1
