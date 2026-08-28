@@ -1,4 +1,5 @@
 %global debug_package %{nil}
+%global __requires_exclude ^python3\\.14dist\\(python-magic\\)
 
 Name:           kde-material-you-colors
 Version:        2.2.0
