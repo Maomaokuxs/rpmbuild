@@ -1,7 +1,7 @@
 %global debug_package %{nil}
 
 Name:           rime-ice
-Version:        2025.05.21
+Version:        2026.06.30
 Release:        1%{?dist}
 Summary:        雾凇拼音 - Rime 简体中文输入方案
 
@@ -59,5 +59,8 @@ fi
 %{_bindir}/rime-ice-enable
 
 %changelog
+* Thu Aug 28 2026 Maomaokuxs <biyuanh@qq.com> - 2026.06.30-1
+- Update nightly snapshot to 2026.06.30
+
 * Wed Jul 09 2025 Maomaokuxs <biyuanh@qq.com> - 2025.05.21-1
 - Initial packaging
