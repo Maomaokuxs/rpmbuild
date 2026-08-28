@@ -12,6 +12,7 @@ Source0:        https://github.com/luisbocanegra/kde-material-you-colors/archive
 BuildArch:      noarch
 BuildRequires:  python3-devel
 BuildRequires:  python3-setuptools
+BuildRequires:  python3-wheel
 
 Requires:       python3-dbus
 Requires:       python3-numpy
@@ -29,9 +30,10 @@ dark themes for Plasma, Konsole, and pywal.
 %setup -q -n kde-material-you-colors-%{version}
 
 %build
+%pyproject_wheel
 
 %install
-python3 setup.py install --root=%{buildroot} --prefix=%{_prefix} --optimize=1
+%pyproject_install
 
 %files
 %{_bindir}/kde-material-you-colors
