@@ -3,13 +3,13 @@
 %global __requires_exclude ^(libmpv|libflutter|libdart|libapp).*
 
 Name:           kazumi
-Version:        2.2.7
+Version:        2.3.0
 Release:        1%{?dist}
 Summary:        Kazumi 应用
 
 License:        Unknown
 URL:            https://github.com/Predidit/Kazumi
-Source0:        https://github.com/Predidit/Kazumi/releases/download/2.2.7/Kazumi_linux_2.2.7_amd64.tar.gz
+Source0:        https://github.com/Predidit/Kazumi/releases/download/2.3.0/Kazumi_linux_2.3.0_amd64.tar.gz
 Source1:        https://raw.githubusercontent.com/Maomaokuxs/rpmbuild/main/assets/kazumi/kazumi-icon.png
 
 BuildRequires:  desktop-file-utils
@@ -57,6 +57,9 @@ desktop-file-validate %{buildroot}%{_datadir}/applications/%{name}.desktop
 %{_datadir}/icons/hicolor/256x256/apps/%{name}.png
 
 %changelog
+* Thu Aug 28 2026 Maomaokuxs <biyuanh@qq.com> - 2.3.0-1
+- Update to 2.3.0
+
 * Wed Aug 12 2026 Maomaokuxs <biyuanh@qq.com> - 2.2.7-1
 - Test webhook auto-rebuild
 

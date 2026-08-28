@@ -1,5 +1,5 @@
 Name:           miyu
-Version:        0.3.0
+Version:        0.4.5
 Release:        1%{?dist}
 Summary:        终端里的二次元 AI 助手
 
@@ -31,5 +31,8 @@ cp -a usr/share/miyu/* %{buildroot}%{_datadir}/miyu/ 2>/dev/null || true
 %{_datadir}/miyu/
 
 %changelog
+* Thu Aug 28 2026 Maomaokuxs <biyuanh@qq.com> - 0.4.5-1
+- Update to 0.4.5
+
 * Sun Jul 26 2026 Maomaokuxs <biyuanh@qq.com> - 0.3.0-1
 - Update to 0.3.0
