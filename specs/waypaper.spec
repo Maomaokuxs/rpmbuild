@@ -10,6 +10,7 @@ Source0:        https://github.com/anufrievroman/waypaper/archive/refs/tags/%{ve
 BuildArch:      noarch
 BuildRequires:  python3-devel
 BuildRequires:  python3-setuptools
+BuildRequires:  systemd-rpm-macros
 Requires:       python3
 Requires:       python3-pillow
 Requires:       python3-gobject
@@ -29,10 +30,12 @@ python3 setup.py install --root=%{buildroot} --prefix=%{_prefix} --optimize=1
 
 %files
 %{_bindir}/waypaper
+%{_bindir}/waypaperd
 %{python3_sitelib}/waypaper/
 %{python3_sitelib}/waypaper-%{version}-py*.egg-info/
 %{_datadir}/applications/waypaper.desktop
 %{_datadir}/icons/hicolor/*/apps/waypaper.*
+%{_datadir}/systemd/user/waypaperd.service
 %{_mandir}/man1/waypaper.1*
 
 %changelog
