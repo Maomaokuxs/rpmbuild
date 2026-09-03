@@ -1,5 +1,5 @@
 Name:           waypaper
-Version:        2.8
+Version:        2.9
 Release:        1%{?dist}
 Summary:        GUI wallpaper manager for Wayland and Xorg
 
@@ -36,5 +36,8 @@ python3 setup.py install --root=%{buildroot} --prefix=%{_prefix} --optimize=1
 %{_mandir}/man1/waypaper.1*
 
 %changelog
+* Thu Aug 28 2026 Maomaokuxs <biyuanh@qq.com> - 2.9-1
+- Update to 2.9
+
 * Thu Jul 10 2025 Maomaokuxs <biyuanh@qq.com> - 2.8-1
 - Initial packaging
