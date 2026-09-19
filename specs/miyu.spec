@@ -1,12 +1,15 @@
 Name:           miyu
-Version:        0.4.6
+Version:        0.6.0
 Release:        1%{?dist}
+
+# Upstream Arch pkgrel embedded in the release asset name
+%global pkgrel 2
 Summary:        终端里的二次元 AI 助手
 
 License:        MIT
 URL:            https://github.com/SHORiN-KiWATA/Miyu
 
-Source0:        https://github.com/SHORiN-KiWATA/Miyu/releases/download/v%{version}/miyu-%{version}-1-x86_64.pkg.tar.zst
+Source0:        https://github.com/SHORiN-KiWATA/Miyu/releases/download/v%{version}/miyu-%{version}-%{pkgrel}-x86_64.pkg.tar.zst
 
 %description
 Miyu 是一个活在终端里的二次元少女 AI 助手，由大模型驱动。
@@ -31,6 +34,9 @@ cp -a usr/share/miyu/* %{buildroot}%{_datadir}/miyu/ 2>/dev/null || true
 %{_datadir}/miyu/
 
 %changelog
+* Sat Sep 19 2026 Maomaokuxs <biyuanh@qq.com> - 0.6.0-1
+- Update to 0.6.0 (upstream pkgrel is now 2)
+
 * Thu Aug 28 2026 Maomaokuxs <biyuanh@qq.com> - 0.4.6-1
 - Update to 0.4.6
 

@@ -3,13 +3,13 @@
 %global __requires_exclude ^(libmpv|libflutter|libdart|libapp).*
 
 Name:           bilibili
-Version:        1.18.0
+Version:        1.19.0
 Release:        1%{?dist}
 Summary:        Bilibili 应用
 
 License:        Unknown
 URL:            https://github.com/msojocs/bilibili-linux
-Source0:        https://github.com/msojocs/bilibili-linux/releases/download/v1.18.0-1/bilibili-v1.18.0-1-x64.tar.gz
+Source0:        https://github.com/msojocs/bilibili-linux/releases/download/v1.19.0-1/bilibili-v1.19.0-1-x64.tar.gz
 Source1:        https://raw.githubusercontent.com/Maomaokuxs/rpmbuild/main/assets/bilibili/bilibili-icon.png
 
 BuildRequires:  desktop-file-utils
@@ -57,5 +57,8 @@ desktop-file-validate %{buildroot}%{_datadir}/applications/%{name}.desktop
 %{_datadir}/icons/hicolor/256x256/apps/%{name}.png
 
 %changelog
+* Sat Sep 19 2026 Maomaokuxs <biyuanh@qq.com> - 1.19.0-1
+- Update to 1.19.0-1
+
 * Sun Jul 26 2026 Maomaokuxs <biyuanh@qq.com> - 1.18.0-1
 - Update to 1.18.0-1
