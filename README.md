@@ -38,6 +38,8 @@ assets/<pkg>/           # 图标、LICENSE 等（spec 通过 raw.githubuserconte
 | waypaper | 2.9 | 壁纸管理器 |
 | hellwal | 1.0.8 | 终端取色 |
 | kde-material-you-colors | 2.2.0 | KDE Material You |
+| fcitx5-mellow-themes | 1.10.1 | fcitx5 圆角主题 10 款 |
+| fcitx5-hud-paper | 1.0 | 自制 Hud Paper 主题（浅/深） |
 
 ## 许可
 
