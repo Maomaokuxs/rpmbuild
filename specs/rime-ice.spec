@@ -3,7 +3,7 @@
 Name:           rime-ice
 Version:        2026.06.30
 Release:        1%{?dist}
-Summary:        雾凇拼音 - Rime 简体中文输入方案
+Summary:        Simplified Chinese input schema for Rime (Wusong Pinyin)
 
 License:        GPL-3.0
 URL:            https://github.com/iDvel/rime-ice

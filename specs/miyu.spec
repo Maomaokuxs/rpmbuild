@@ -4,7 +4,7 @@ Release:        1%{?dist}
 
 # Upstream Arch pkgrel embedded in the release asset name
 %global pkgrel 1
-Summary:        终端里的二次元 AI 助手
+Summary:        2D anime-style AI assistant in your terminal
 
 License:        MIT
 URL:            https://github.com/SHORiN-KiWATA/Miyu
