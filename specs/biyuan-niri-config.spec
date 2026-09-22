@@ -1,4 +1,4 @@
-%global commit 2dba439505692adec76d3644c9e9febfa3b144f8
+%global commit fd473f6d5ee2e418b32c6a125c509f97eb55f906
 
 Name:           biyuan-niri-config
 Version:        20260922
