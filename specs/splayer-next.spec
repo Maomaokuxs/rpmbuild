@@ -74,7 +74,7 @@ fi
 %{_datadir}/icons/hicolor/*/apps/%{name}.png
 
 %changelog
-* Thu Aug 28 2026 Maomaokuxs <biyuanh@qq.com> - 1.1.0-1
+* Fri Aug 28 2026 Maomaokuxs <biyuanh@qq.com> - 1.1.0-1
 - Update to 1.1.0
 
 * Wed Aug 12 2026 Maomaokuxs <biyuanh@qq.com> - 1.0.0-2

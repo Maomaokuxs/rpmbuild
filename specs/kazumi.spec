@@ -68,7 +68,7 @@ desktop-file-validate %{buildroot}%{_datadir}/applications/%{name}.desktop
 * Sat Sep 19 2026 Maomaokuxs <biyuanh@qq.com> - 2.3.3-1
 - Update to 2.3.3
 
-* Thu Aug 28 2026 Maomaokuxs <biyuanh@qq.com> - 2.3.0-1
+* Fri Aug 28 2026 Maomaokuxs <biyuanh@qq.com> - 2.3.0-1
 - Update to 2.3.0
 
 * Wed Aug 12 2026 Maomaokuxs <biyuanh@qq.com> - 2.2.7-1

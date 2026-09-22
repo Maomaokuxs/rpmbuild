@@ -13,8 +13,9 @@ BuildArch:      noarch
 Requires:       librime
 
 %description
-雾凇拼音是长期维护的 Rime 简体中文词库和输入方案，
-提供拼音、双拼、辅助码等多种输入模式。
+Rime Ice (雾凇拼音) is a long-maintained simplified Chinese input
+schema and dictionary for Rime, offering pinyin, double-pinyin
+and auxiliary-code input modes.
 
 %prep
 mkdir -p %{name}-%{version}
@@ -59,7 +60,7 @@ fi
 %{_bindir}/rime-ice-enable
 
 %changelog
-* Thu Aug 28 2026 Maomaokuxs <biyuanh@qq.com> - 2026.06.30-1
+* Fri Aug 28 2026 Maomaokuxs <biyuanh@qq.com> - 2026.06.30-1
 - Update nightly snapshot to 2026.06.30
 
 * Wed Jul 09 2025 Maomaokuxs <biyuanh@qq.com> - 2025.05.21-1

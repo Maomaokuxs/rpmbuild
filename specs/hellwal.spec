@@ -32,5 +32,5 @@ install -m 755 hellwal %{buildroot}%{_bindir}/hellwal
 * Sat Sep 19 2026 Maomaokuxs <biyuanh@qq.com> - 1.0.8-1
 - Update to 1.0.8 (upstream tag has no v prefix)
 
-* Thu Aug 28 2026 Maomaokuxs <biyuanh@qq.com> - 1.0.7-1
+* Fri Aug 28 2026 Maomaokuxs <biyuanh@qq.com> - 1.0.7-1
 - Initial package
