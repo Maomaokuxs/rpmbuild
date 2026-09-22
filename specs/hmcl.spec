@@ -2,10 +2,10 @@
 
 Name:           hmcl
 Version:        3.16.3
-Release:        1%{?dist}
-Summary:        Hmcl 应用
+Release:        2%{?dist}
+Summary:        Hello Minecraft! Launcher - multifunctional Minecraft launcher
 
-License:        Unknown
+License:        GPL-3.0-only
 URL:            https://github.com/HMCL-dev/HMCL
 Source0:        https://github.com/HMCL-dev/HMCL/releases/download/v3.16.3/HMCL-3.16.3.jar
 Source1:        https://raw.githubusercontent.com/Maomaokuxs/rpmbuild/main/assets/hmcl/hmcl-icon.png
@@ -14,7 +14,10 @@ BuildRequires:  desktop-file-utils
 BuildRequires:  chrpath
 
 %description
-Hmcl 第三方应用。
+HMCL (Hello Minecraft! Launcher) is a multifunctional,
+cross-platform and popular Minecraft launcher. It supports
+Microsoft, Mojang, Yggdrasil and offline logins, mod management,
+and game customization.
 
 %prep
 mkdir -p %{name}-%{version}
@@ -37,7 +40,7 @@ mkdir -p %{buildroot}%{_datadir}/applications
 cat > %{buildroot}%{_datadir}/applications/%{name}.desktop <<DESKEOF
 [Desktop Entry]
 Name=Hmcl
-Comment=Hmcl 应用
+Comment=Hello Minecraft! Launcher - multifunctional Minecraft launcher
 Exec=java -Dglass.gtk.uiScale=1.5 -jar %{_libdir}/%{name}/HMCL-%{version}.jar
 Icon=%{name}
 Terminal=false
@@ -56,5 +59,8 @@ desktop-file-validate %{buildroot}%{_datadir}/applications/%{name}.desktop
 %{_datadir}/icons/hicolor/256x256/apps/%{name}.png
 
 %changelog
+* Tue Sep 22 2026 Maomaokuxs <biyuanh@qq.com> - 3.16.3-2
+- Enrich package metadata (summary, description, license)
+
 * Sun Jul 26 2026 Maomaokuxs <biyuanh@qq.com> - 3.16.3-1
 - Update to 3.16.3

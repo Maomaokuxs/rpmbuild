@@ -4,10 +4,10 @@
 
 Name:           bilibili
 Version:        1.19.0
-Release:        1%{?dist}
-Summary:        Bilibili 应用
+Release:        2%{?dist}
+Summary:        Bilibili desktop client for Linux
 
-License:        Unknown
+License:        MIT
 URL:            https://github.com/msojocs/bilibili-linux
 Source0:        https://github.com/msojocs/bilibili-linux/releases/download/v1.19.0-1/bilibili-v1.19.0-1-x64.tar.gz
 Source1:        https://raw.githubusercontent.com/Maomaokuxs/rpmbuild/main/assets/bilibili/bilibili-icon.png
@@ -17,7 +17,9 @@ BuildRequires:  chrpath
 BuildRequires:  rpm-build
 
 %description
-Bilibili 第三方应用。
+Bilibili Linux client ported from the official Bilibili desktop
+client, with region roaming support. Watch videos, live streams
+and messages on Linux.
 
 %prep
 mkdir -p %{name}-%{version}
@@ -39,7 +41,7 @@ mkdir -p %{buildroot}%{_datadir}/applications
 cat > %{buildroot}%{_datadir}/applications/%{name}.desktop <<DESKEOF
 [Desktop Entry]
 Name=Bilibili
-Comment=Bilibili 应用
+Comment=Bilibili desktop client for Linux
 Exec=%{name}
 Icon=%{name}
 Terminal=false
@@ -57,6 +59,9 @@ desktop-file-validate %{buildroot}%{_datadir}/applications/%{name}.desktop
 %{_datadir}/icons/hicolor/256x256/apps/%{name}.png
 
 %changelog
+* Tue Sep 22 2026 Maomaokuxs <biyuanh@qq.com> - 1.19.0-2
+- Enrich package metadata (summary, description, license)
+
 * Sat Sep 19 2026 Maomaokuxs <biyuanh@qq.com> - 1.19.0-1
 - Update to 1.19.0-1
 

@@ -4,10 +4,10 @@
 
 Name:           kazumi
 Version:        2.3.4
-Release:        1%{?dist}
-Summary:        Kazumi 应用
+Release:        2%{?dist}
+Summary:        Rule-based anime streaming app with danmaku
 
-License:        Unknown
+License:        GPL-3.0-only
 URL:            https://github.com/Predidit/Kazumi
 Source0:        https://github.com/Predidit/Kazumi/releases/download/2.3.4/Kazumi_linux_2.3.4_amd64.tar.gz
 Source1:        https://raw.githubusercontent.com/Maomaokuxs/rpmbuild/main/assets/kazumi/kazumi-icon.png
@@ -17,7 +17,9 @@ BuildRequires:  chrpath
 BuildRequires:  rpm-build
 
 %description
-Kazumi 第三方应用。
+Kazumi is an anime streaming app based on custom rules,
+supporting online streaming, danmaku comments and
+real-time super-resolution.
 
 %prep
 mkdir -p %{name}-%{version}
@@ -39,7 +41,7 @@ mkdir -p %{buildroot}%{_datadir}/applications
 cat > %{buildroot}%{_datadir}/applications/%{name}.desktop <<DESKEOF
 [Desktop Entry]
 Name=Kazumi
-Comment=Kazumi 应用
+Comment=Rule-based anime streaming app with danmaku
 Exec=%{name}
 Icon=%{name}
 Terminal=false
@@ -57,6 +59,9 @@ desktop-file-validate %{buildroot}%{_datadir}/applications/%{name}.desktop
 %{_datadir}/icons/hicolor/256x256/apps/%{name}.png
 
 %changelog
+* Tue Sep 22 2026 Maomaokuxs <biyuanh@qq.com> - 2.3.4-2
+- Enrich package metadata (summary, description, license)
+
 * Tue Sep 22 2026 Maomaokuxs <biyuanh@qq.com> - 2.3.4-1
 - Update to 2.3.4
 
