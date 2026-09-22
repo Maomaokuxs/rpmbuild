@@ -42,6 +42,12 @@ assets/<pkg>/           # 图标、LICENSE 等（spec 通过 raw.githubuserconte
 | fcitx5-hud-paper | 1.0 | 自制 Hud Paper 主题（浅/深） |
 | biyuan-niri-config | 20260922 | niri 桌面配置模板+部署脚本 |
 | biyuan-niri-desktop | 20260922 | niri 桌面元包（拉齐应用依赖） |
+| hyprwayland-scanner | 0.4.6 | wayland-scanner C++ 版（构建工具） |
+| hyprutils | 0.14.2 | Hyprland C++ 基础库 |
+| hyprlang | 0.6.8 | Hyprland 配置语言库 |
+| hyprgraphics | 0.5.1 | Hyprland 图像加载库 |
+| hypridle | 0.1.8 | Hyprland 闲置守护进程 |
+| hyprlock | 0.9.6 | Hyprland 锁屏 |
 
 ## 许可
 
