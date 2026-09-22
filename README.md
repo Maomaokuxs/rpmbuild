@@ -27,10 +27,10 @@ assets/<pkg>/           # 图标、LICENSE 等（spec 通过 raw.githubuserconte
 
 | 包名 | 版本 | 说明 |
 | --- | --- | --- |
-| kazumi | 2.3.3 | 二次元追番 |
+| kazumi | 2.3.4 | 二次元追番 |
 | hmcl | 3.16.3 | Minecraft 启动器 |
 | bilibili | 1.19.0 | Bilibili 客户端 |
-| miyu | 0.6.0 | 终端 AI 助手 |
+| miyu | 0.6.2 | 终端 AI 助手 |
 | splayer | 3.1.1 | 音乐播放器 |
 | splayer-next | 1.1.0 | 音乐播放器 |
 | rime-ice | 2026.06.30 | 雾凇拼音 |

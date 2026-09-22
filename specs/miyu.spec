@@ -1,9 +1,9 @@
 Name:           miyu
-Version:        0.6.0
+Version:        0.6.2
 Release:        1%{?dist}
 
 # Upstream Arch pkgrel embedded in the release asset name
-%global pkgrel 2
+%global pkgrel 1
 Summary:        终端里的二次元 AI 助手
 
 License:        MIT
@@ -34,6 +34,9 @@ cp -a usr/share/miyu/* %{buildroot}%{_datadir}/miyu/ 2>/dev/null || true
 %{_datadir}/miyu/
 
 %changelog
+* Tue Sep 22 2026 Maomaokuxs <biyuanh@qq.com> - 0.6.2-1
+- Update to 0.6.2 (upstream pkgrel is now 1)
+
 * Sat Sep 19 2026 Maomaokuxs <biyuanh@qq.com> - 0.6.0-1
 - Update to 0.6.0 (upstream pkgrel is now 2)
 
