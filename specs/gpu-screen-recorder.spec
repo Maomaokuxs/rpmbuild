@@ -26,6 +26,7 @@ BuildRequires:  pkgconfig(xcomposite)
 BuildRequires:  pkgconfig(xdamage)
 BuildRequires:  pkgconfig(xfixes)
 BuildRequires:  pkgconfig(xrandr)
+BuildRequires:  pkgconfig(vulkan)
 BuildRequires:  vulkan-headers
 BuildRequires:  (ffmpeg-free-devel or ffmpeg-devel)
 Requires(post): libcap
