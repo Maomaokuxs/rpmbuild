@@ -52,6 +52,7 @@ assets/<pkg>/           # 图标、LICENSE 等（spec 通过 raw.githubuserconte
 | jetbrainsmono-nerd-fonts | 3.5.1 | JetBrainsMono 图标字体 |
 | python3-materialyoucolor | 3.0.4 | Material You 纯 Python 算法库 |
 | python3-screeninfo | 0.8.1 | 屏幕信息查询库 |
+| sarasa-gothic-fonts | 1.0.41 | 更纱黑体 CJK 编程字体 |
 
 ## 许可
 
