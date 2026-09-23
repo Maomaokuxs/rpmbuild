@@ -9,6 +9,7 @@ Source0:        https://codeberg.org/LGFae/awww/archive/v%{version}.tar.gz#/%{na
 
 BuildRequires:  cargo
 BuildRequires:  rust
+BuildRequires:  pkgconfig(liblz4)
 
 %description
 awww is an animated wallpaper daemon for Wayland compositors,
