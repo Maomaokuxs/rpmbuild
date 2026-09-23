@@ -9,6 +9,8 @@ Source0:        https://github.com/hyprwm/hyprgraphics/archive/refs/tags/v%{vers
 
 BuildRequires:  cmake
 BuildRequires:  gcc-c++
+BuildRequires:  libglvnd-devel
+BuildRequires:  mesa-libEGL-devel
 BuildRequires:  pkgconfig(cairo)
 BuildRequires:  pkgconfig(hyprutils)
 BuildRequires:  pkgconfig(libdrm)

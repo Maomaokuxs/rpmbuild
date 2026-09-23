@@ -10,6 +10,8 @@ Source0:        https://github.com/hyprwm/hyprlock/archive/refs/tags/v%{version}
 BuildRequires:  cmake
 BuildRequires:  gcc-c++
 BuildRequires:  hyprwayland-scanner
+BuildRequires:  libglvnd-devel
+BuildRequires:  mesa-libEGL-devel
 BuildRequires:  pam-devel
 BuildRequires:  pkgconfig(hyprgraphics) >= 0.1.6
 BuildRequires:  pkgconfig(hyprland-protocols) >= 0.6.0
