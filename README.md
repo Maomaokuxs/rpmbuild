@@ -61,7 +61,6 @@ assets/<pkg>/           # 图标、LICENSE 等（spec 通过 raw.githubuserconte
 | maple-mono-nf-cn | 7.9 | Maple 代码字体中文图标版 |
 | flclash | 0.8.98 | 跨平台代理客户端 |
 | linglong-store | 3.6.0 | 玲珑应用商店社区版 |
-| com.cmic.mcloud | 1.1.1 | 中国移动云盘客户端 |
 
 ## 许可
 
