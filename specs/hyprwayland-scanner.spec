@@ -30,6 +30,8 @@ other Hyprland ecosystem projects.
 %files
 %license LICENSE
 %{_bindir}/hyprwayland-scanner
+%{_libdir}/cmake/hyprwayland-scanner/
+%{_libdir}/pkgconfig/hyprwayland-scanner.pc
 
 %changelog
 * Tue Sep 22 2026 Maomaokuxs <biyuanh@qq.com> - 0.4.6-1
