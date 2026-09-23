@@ -13,13 +13,20 @@ BuildRequires:  hyprwayland-scanner
 BuildRequires:  libglvnd-devel
 BuildRequires:  mesa-libEGL-devel
 BuildRequires:  pam-devel
+BuildRequires:  pkgconfig(cairo)
+BuildRequires:  pkgconfig(egl)
+BuildRequires:  pkgconfig(gbm)
 BuildRequires:  pkgconfig(hyprgraphics) >= 0.1.6
 BuildRequires:  pkgconfig(hyprland-protocols) >= 0.6.0
 BuildRequires:  pkgconfig(hyprlang) >= 0.6.0
 BuildRequires:  pkgconfig(hyprutils) >= 0.11.0
-BuildRequires:  pkgconfig(sdbus-c++)
+BuildRequires:  pkgconfig(libdrm)
+BuildRequires:  pkgconfig(pangocairo)
+BuildRequires:  pkgconfig(sdbus-c++) >= 2.0.0
 BuildRequires:  pkgconfig(wayland-client)
-BuildRequires:  pkgconfig(wayland-protocols)
+BuildRequires:  pkgconfig(wayland-egl)
+BuildRequires:  pkgconfig(wayland-protocols) >= 1.35
+BuildRequires:  pkgconfig(xkbcommon)
 
 %description
 hyprlock is Hyprland's GPU-accelerated screen locker with
