@@ -48,6 +48,7 @@ assets/<pkg>/           # 图标、LICENSE 等（spec 通过 raw.githubuserconte
 | hyprgraphics | 0.5.1 | Hyprland 图像加载库 |
 | hypridle | 0.1.8 | Hyprland 闲置守护进程 |
 | hyprlock | 0.9.6 | Hyprland 锁屏 |
+| hyprland-protocols | 0.7.1 | Hyprland Wayland 协议扩展 |
 
 ## 许可
 
