@@ -9,6 +9,7 @@ Source0:        https://files.pythonhosted.org/packages/eb/23/2e63e7bdfcc1aa7ba9
 
 BuildArch:      noarch
 BuildRequires:  python3-devel
+BuildRequires:  python3-pip
 BuildRequires:  python3-setuptools
 BuildRequires:  python3-wheel
 

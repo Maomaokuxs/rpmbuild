@@ -9,6 +9,7 @@ Source0:        https://files.pythonhosted.org/packages/ec/bb/e69e5e628d43f118e0
 
 BuildArch:      noarch
 BuildRequires:  python3-devel
+BuildRequires:  python3-pip
 BuildRequires:  python3-poetry-core
 
 %description
