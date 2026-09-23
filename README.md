@@ -55,6 +55,7 @@ assets/<pkg>/           # 图标、LICENSE 等（spec 通过 raw.githubuserconte
 | sarasa-gothic-fonts | 1.0.41 | 更纱黑体 CJK 编程字体 |
 | awww | 0.12.1 | Wayland 动态壁纸守护进程 |
 | starship | 1.26.0 | 极简快速的 shell 提示符 |
+| lxgw-wenkai | 1.522 | 霞鹜文楷 CJK 字体（常规+等宽） |
 
 ## 许可
 
