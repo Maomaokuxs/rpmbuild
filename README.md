@@ -49,6 +49,9 @@ assets/<pkg>/           # 图标、LICENSE 等（spec 通过 raw.githubuserconte
 | hypridle | 0.1.8 | Hyprland 闲置守护进程 |
 | hyprlock | 0.9.6 | Hyprland 锁屏 |
 | hyprland-protocols | 0.7.1 | Hyprland Wayland 协议扩展 |
+| jetbrainsmono-nerd-fonts | 3.5.1 | JetBrainsMono 图标字体 |
+| python3-materialyoucolor | 3.0.4 | Material You 纯 Python 算法库 |
+| python3-screeninfo | 0.8.1 | 屏幕信息查询库 |
 
 ## 许可
 
