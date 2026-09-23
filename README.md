@@ -56,6 +56,9 @@ assets/<pkg>/           # 图标、LICENSE 等（spec 通过 raw.githubuserconte
 | awww | 0.12.1 | Wayland 动态壁纸守护进程 |
 | starship | 1.26.0 | 极简快速的 shell 提示符 |
 | lxgw-wenkai | 1.522 | 霞鹜文楷 CJK 字体（常规+等宽） |
+| sarasa-mono-fonts | 1.0.41 | 更纱黑体等宽·简体中文 |
+| sarasa-term-fonts | 1.0.41 | 更纱黑体终端·简体中文 |
+| maple-mono-nf-cn | 7.9 | Maple 代码字体中文图标版 |
 
 ## 许可
 
