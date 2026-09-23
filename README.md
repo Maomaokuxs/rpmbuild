@@ -53,6 +53,8 @@ assets/<pkg>/           # 图标、LICENSE 等（spec 通过 raw.githubuserconte
 | python3-materialyoucolor | 3.0.4 | Material You 纯 Python 算法库 |
 | python3-screeninfo | 0.8.1 | 屏幕信息查询库 |
 | sarasa-gothic-fonts | 1.0.41 | 更纱黑体 CJK 编程字体 |
+| awww | 0.12.1 | Wayland 动态壁纸守护进程 |
+| starship | 1.26.0 | 极简快速的 shell 提示符 |
 
 ## 许可
 
