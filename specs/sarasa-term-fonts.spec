@@ -12,21 +12,22 @@ BuildArch:      noarch
 BuildRequires:  unzip
 
 %description
-Sarasa Term (更纱黑体终端) is the terminal-emulator variant of the
-Sarasa Gothic CJK programming font family, with half-width latin
-glyphs for clean terminal rendering. For proportional and monospaced
-variants see sarasa-gothic-fonts and sarasa-mono-fonts.
+Sarasa Term SC (更纱黑体终端·简体中文) is the Simplified Chinese
+terminal-emulator variant of the Sarasa Gothic CJK programming
+font family, with half-width latin glyphs for clean terminal
+rendering. For other variants see sarasa-gothic-fonts and
+sarasa-mono-fonts.
 
 %prep
 %setup -q -c -n %{name}-%{version} -T
-unzip -q -o %{SOURCE0} 'SarasaTerm-*.ttf'
+unzip -q -o %{SOURCE0} 'SarasaTermSC-*.ttf'
 cp %{SOURCE1} LICENSE
 
 %build
 
 %install
 mkdir -p %{buildroot}%{_datadir}/fonts/sarasa-term
-install -m 644 SarasaTerm-*.ttf %{buildroot}%{_datadir}/fonts/sarasa-term/
+install -m 644 SarasaTermSC-*.ttf %{buildroot}%{_datadir}/fonts/sarasa-term/
 
 %files
 %license LICENSE

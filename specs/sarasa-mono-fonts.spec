@@ -12,21 +12,21 @@ BuildArch:      noarch
 BuildRequires:  unzip
 
 %description
-Sarasa Mono (更纱黑体等宽) is the monospaced variant of the Sarasa
-Gothic CJK programming font family, based on Source Han Sans and
-Iosevka. For proportional and terminal variants see
-sarasa-gothic-fonts and sarasa-term-fonts.
+Sarasa Mono SC (更纱黑体等宽·简体中文) is the Simplified Chinese
+monospaced variant of the Sarasa Gothic CJK programming font
+family, based on Source Han Sans and Iosevka. For other variants
+see sarasa-gothic-fonts and sarasa-term-fonts.
 
 %prep
 %setup -q -c -n %{name}-%{version} -T
-unzip -q -o %{SOURCE0} 'SarasaMono-*.ttf'
+unzip -q -o %{SOURCE0} 'SarasaMonoSC-*.ttf'
 cp %{SOURCE1} LICENSE
 
 %build
 
 %install
 mkdir -p %{buildroot}%{_datadir}/fonts/sarasa-mono
-install -m 644 SarasaMono-*.ttf %{buildroot}%{_datadir}/fonts/sarasa-mono/
+install -m 644 SarasaMonoSC-*.ttf %{buildroot}%{_datadir}/fonts/sarasa-mono/
 
 %files
 %license LICENSE
