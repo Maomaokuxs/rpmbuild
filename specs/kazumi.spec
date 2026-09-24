@@ -3,13 +3,13 @@
 %global __requires_exclude ^(libmpv|libflutter|libdart|libapp).*
 
 Name:           kazumi
-Version:        2.3.4
-Release:        2%{?dist}
+Version:        2.3.6
+Release:        1%{?dist}
 Summary:        Rule-based anime streaming app with danmaku
 
 License:        GPL-3.0-only
 URL:            https://github.com/Predidit/Kazumi
-Source0:        https://github.com/Predidit/Kazumi/releases/download/2.3.4/Kazumi_linux_2.3.4_amd64.tar.gz
+Source0:        https://github.com/Predidit/Kazumi/releases/download/2.3.6/Kazumi_linux_2.3.6_amd64.tar.gz
 Source1:        https://raw.githubusercontent.com/Maomaokuxs/rpmbuild/main/assets/kazumi/kazumi-icon.png
 
 BuildRequires:  desktop-file-utils
@@ -59,7 +59,8 @@ desktop-file-validate %{buildroot}%{_datadir}/applications/%{name}.desktop
 %{_datadir}/icons/hicolor/256x256/apps/%{name}.png
 
 %changelog
-* Tue Sep 22 2026 Maomaokuxs <biyuanh@qq.com> - 2.3.4-2
+* Thu Sep 24 2026 Maomaokuxs <biyuanh@qq.com> - 2.3.6-1
+- Update to 2.3.6
 - Enrich package metadata (summary, description, license)
 
 * Tue Sep 22 2026 Maomaokuxs <biyuanh@qq.com> - 2.3.4-1
