@@ -62,6 +62,7 @@ assets/<pkg>/           # 图标、LICENSE 等（spec 通过 raw.githubuserconte
 | sarasa-term-fonts | 1.0.41 | 更纱黑体终端·简体中文 |
 | maple-mono-nf-cn | 7.9 | Maple 代码字体中文图标版 |
 | iosevka-term-nerd-fonts | 3.5.1 | Iosevka 终端图标字体（81 字形） |
+| iosevka-nerd-fonts | 3.5.1 | Iosevka 标准图标字体（81 字形） |
 | flclash | 0.8.98 | 跨平台代理客户端 |
 | linglong-store | 3.6.0 | 玲珑应用商店社区版 |
 
