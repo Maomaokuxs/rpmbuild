@@ -5,7 +5,7 @@
 
 Name:           flclash
 Version:        0.8.98
-Release:        1%{?dist}
+Release:        2%{?dist}
 Summary:        Cross-platform proxy client built with Flutter
 
 License:        GPL-3.0-only
@@ -29,21 +29,26 @@ rpm2cpio %{SOURCE0} | cpio -idm
 %build
 
 %install
-mkdir -p %{buildroot}%{_bindir} %{buildroot}%{_datadir}
-# 只取 bin/share：官方包 usr/lib 下仅有无用的 .build-id 链接
-cp -a %{name}-%{version}/usr/bin/* %{buildroot}%{_bindir}/
-cp -a %{name}-%{version}/usr/share/. %{buildroot}%{_datadir}/
+mkdir -p %{buildroot}%{_libdir}/flclash %{buildroot}%{_bindir} %{buildroot}%{_datadir}
+# 应用本体统一进 /usr/lib（官方包放在 /usr/share，无他因）
+cp -a %{name}-%{version}/usr/share/FlClash/. %{buildroot}%{_libdir}/flclash/
+ln -s ../lib/flclash/FlClash %{buildroot}%{_bindir}/FlClash
+# desktop/图标/元数据照搬官方包（Exec/Icon 均为裸名，无需改路径）
+cp -a %{name}-%{version}/usr/share/applications %{buildroot}%{_datadir}/
+cp -a %{name}-%{version}/usr/share/pixmaps %{buildroot}%{_datadir}/
+cp -a %{name}-%{version}/usr/share/metainfo %{buildroot}%{_datadir}/
 
 %check
 desktop-file-validate %{buildroot}%{_datadir}/applications/FlClash.desktop
 
 %files
 %{_bindir}/FlClash
-%{_datadir}/FlClash/
+%{_libdir}/flclash/
 %{_datadir}/applications/FlClash.desktop
 %{_datadir}/pixmaps/FlClash.png
 %{_datadir}/metainfo/
 
 %changelog
-* Wed Sep 23 2026 Maomaokuxs <biyuanh@qq.com> - 0.8.98-1
+* Thu Sep 24 2026 Maomaokuxs <biyuanh@qq.com> - 0.8.98-2
+- Move app dir to /usr/lib (repo path standard)
 - Initial package (repack official upstream RPM)
