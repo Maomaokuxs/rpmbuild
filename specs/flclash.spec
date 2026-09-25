@@ -5,7 +5,7 @@
 
 Name:           flclash
 Version:        0.8.98
-Release:        2%{?dist}
+Release:        3%{?dist}
 Summary:        Cross-platform proxy client built with Flutter
 
 License:        GPL-3.0-only
@@ -32,7 +32,7 @@ rpm2cpio %{SOURCE0} | cpio -idm
 mkdir -p %{buildroot}%{_libdir}/flclash %{buildroot}%{_bindir} %{buildroot}%{_datadir}
 # 应用本体统一进 /usr/lib（官方包放在 /usr/share，无他因）
 cp -a %{name}-%{version}/usr/share/FlClash/. %{buildroot}%{_libdir}/flclash/
-ln -s ../lib/flclash/FlClash %{buildroot}%{_bindir}/FlClash
+ln -s %{_libdir}/flclash/FlClash %{buildroot}%{_bindir}/FlClash
 # desktop/图标/元数据照搬官方包（Exec/Icon 均为裸名，无需改路径）
 cp -a %{name}-%{version}/usr/share/applications %{buildroot}%{_datadir}/
 cp -a %{name}-%{version}/usr/share/pixmaps %{buildroot}%{_datadir}/
@@ -49,6 +49,9 @@ desktop-file-validate %{buildroot}%{_datadir}/applications/FlClash.desktop
 %{_datadir}/metainfo/
 
 %changelog
+* Thu Sep 24 2026 Maomaokuxs <biyuanh@qq.com> - 0.8.98-3
+- Fix dangling /usr/bin symlink (absolute libdir path)
+
 * Thu Sep 24 2026 Maomaokuxs <biyuanh@qq.com> - 0.8.98-2
 - Move app dir to /usr/lib (repo path standard)
 - Initial package (repack official upstream RPM)
