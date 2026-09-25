@@ -1,4 +1,4 @@
-Name:           sarasa-superttc
+Name:           sarasa-all-fonts
 Version:        1.0.41
 Release:        1%{?dist}
 Summary:        Sarasa SuperTTC complete CJK font collection
@@ -19,19 +19,19 @@ weight. Install this one package instead of the split
 sarasa-*-fonts packages if you want everything.
 
 %prep
-%setup -q -c -n %{name}-%{version} -T
+%setup -q -c -n sarasa-all-fonts-%{version} -T
 unzip -q -o %{SOURCE0} 'Sarasa-SuperTTC.ttc'
 cp %{SOURCE1} LICENSE
 
 %build
 
 %install
-mkdir -p %{buildroot}%{_datadir}/fonts/sarasa-superttc
-install -m 644 Sarasa-SuperTTC.ttc %{buildroot}%{_datadir}/fonts/sarasa-superttc/
+mkdir -p %{buildroot}%{_datadir}/fonts/sarasa-all
+install -m 644 Sarasa-SuperTTC.ttc %{buildroot}%{_datadir}/fonts/sarasa-all/
 
 %files
 %license LICENSE
-%{_datadir}/fonts/sarasa-superttc/
+%{_datadir}/fonts/sarasa-all/
 
 %changelog
 * Thu Sep 24 2026 Maomaokuxs <biyuanh@qq.com> - 1.0.41-1
