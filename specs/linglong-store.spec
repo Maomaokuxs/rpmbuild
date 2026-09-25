@@ -45,7 +45,7 @@ done
 desktop-file-validate %{buildroot}%{_datadir}/applications/linglong-store.desktop
 
 %files
-%license /usr/lib/linglong-store/LICENSE
+%license %{_libdir}/linglong-store/LICENSE
 %{_libdir}/linglong-store/
 %{_bindir}/linglong-store
 %{_datadir}/applications/linglong-store.desktop
