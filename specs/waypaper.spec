@@ -1,6 +1,6 @@
 Name:           waypaper
 Version:        2.9
-Release:        1%{?dist}
+Release:        2%{?dist}
 Summary:        GUI wallpaper manager for Wayland and Xorg
 
 License:        GPL-3.0
@@ -14,6 +14,10 @@ BuildRequires:  systemd-rpm-macros
 Requires:       python3
 Requires:       python3-pillow
 Requires:       python3-gobject
+Requires:       python3-platformdirs
+Requires:       python3-imageio
+Requires:       python3-imageio-ffmpeg
+Requires:       python3-screeninfo
 Requires:       gtk3
 
 %description
@@ -39,6 +43,9 @@ python3 setup.py install --root=%{buildroot} --prefix=%{_prefix} --optimize=1
 %{_mandir}/man1/waypaper.1*
 
 %changelog
+* Sat Sep 26 2026 Maomaokuxs <biyuanh@qq.com> - 2.9-2
+- Add missing Requires: platformdirs, imageio, imageio-ffmpeg, screeninfo
+
 * Fri Aug 28 2026 Maomaokuxs <biyuanh@qq.com> - 2.9-1
 - Update to 2.9
 
