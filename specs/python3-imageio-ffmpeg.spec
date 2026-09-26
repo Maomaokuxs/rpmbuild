@@ -1,3 +1,5 @@
+%global debug_package %{nil}
+
 Name:           python3-imageio-ffmpeg
 Version:        0.6.0
 Release:        1%{?dist}
