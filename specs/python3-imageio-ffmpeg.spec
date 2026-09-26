@@ -7,6 +7,7 @@ License:        BSD-2-Clause
 URL:            https://github.com/imageio/imageio-ffmpeg
 Source0:        https://files.pythonhosted.org/packages/a0/2d/43c8522a2038e9d0e7dbdf3a61195ecc31ca576fb1527a528c877e87d973/imageio_ffmpeg-%{version}-py3-none-manylinux2014_x86_64.whl
 
+BuildRequires:  python3
 BuildRequires:  unzip
 
 # NOTE: no BuildArch/ExclusiveArch on purpose — rpkg preprocess_spec
