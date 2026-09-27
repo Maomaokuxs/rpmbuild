@@ -75,7 +75,10 @@ update-desktop-database -q %{_datadir}/applications || :
 update-desktop-database -q %{_datadir}/applications || :
 
 %files
-%license %{_libdir}/com.cmic.mcloud/LICENSE
+# 注意：deb 载荷里没有名为 LICENSE 的文件，只有 Electron 自带的
+# LICENSE.electron.txt / LICENSES.chromium.html，它们随下面的目录一起打包。
+# 不要再加 %license 指向 .../com.cmic.mcloud/LICENSE，否则构建会失败
+# （rpmbuild 的 %files 是硬校验：File not found）。
 %{_libdir}/com.cmic.mcloud
 %{_datadir}/applications/com.cmic.mcloud.desktop
 %{_datadir}/icons/hicolor/*/apps/com.cmic.mcloud.png
