@@ -5,7 +5,7 @@ Version:        2026.06.30
 Release:        1%{?dist}
 Summary:        Simplified Chinese input schema for Rime (Wusong Pinyin)
 
-License:        GPL-3.0
+License:        GPL-3.0-only
 URL:            https://github.com/iDvel/rime-ice
 Source0:        https://github.com/iDvel/rime-ice/releases/download/nightly/full.zip
 

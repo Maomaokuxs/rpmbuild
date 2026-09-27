@@ -3,7 +3,7 @@ Version:        2.9
 Release:        2%{?dist}
 Summary:        GUI wallpaper manager for Wayland and Xorg
 
-License:        GPL-3.0
+License:        GPL-3.0-only
 URL:            https://github.com/anufrievroman/waypaper
 Source0:        https://github.com/anufrievroman/waypaper/archive/refs/tags/%{version}.tar.gz
 
@@ -26,6 +26,7 @@ supporting swaybg, swww, feh, hyprpaper, and other backends.
 
 %prep
 %setup -q
+cp LICENSE .
 
 %build
 
@@ -33,6 +34,7 @@ supporting swaybg, swww, feh, hyprpaper, and other backends.
 python3 setup.py install --root=%{buildroot} --prefix=%{_prefix} --optimize=1
 
 %files
+%license LICENSE
 %{_bindir}/waypaper
 %{_bindir}/waypaperd
 %{python3_sitelib}/waypaper/

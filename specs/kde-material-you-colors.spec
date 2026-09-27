@@ -30,6 +30,7 @@ dark themes for Plasma, Konsole, and pywal.
 
 %prep
 %setup -q -n kde-material-you-colors-%{version}
+cp LICENSE .
 
 %build
 %pyproject_wheel
@@ -38,6 +39,7 @@ dark themes for Plasma, Konsole, and pywal.
 %pyproject_install
 
 %files
+%license LICENSE
 %{_bindir}/kde-material-you-colors
 %{python3_sitelib}/kde_material_you_colors/
 %{python3_sitelib}/kde_material_you_colors-%{version}*.dist-info/

@@ -5,10 +5,11 @@ Version:        3.16.3
 Release:        2%{?dist}
 Summary:        Hello Minecraft! Launcher - multifunctional Minecraft launcher
 
-License:        GPL-3.0-or-later
+License:        GPL-3.0-only
 URL:            https://github.com/HMCL-dev/HMCL
 Source0:        https://github.com/HMCL-dev/HMCL/releases/download/v3.16.3/HMCL-3.16.3.jar
 Source1:        https://raw.githubusercontent.com/Maomaokuxs/rpmbuild/main/assets/hmcl/hmcl-icon.png
+Source2:        https://raw.githubusercontent.com/HMCL-dev/HMCL/main/LICENSE#/LICENSE
 Requires:       java
 BuildRequires:  desktop-file-utils
 BuildRequires:  chrpath
@@ -20,6 +21,7 @@ Microsoft, Mojang, Yggdrasil and offline logins, mod management,
 and game customization.
 
 %prep
+cp %{SOURCE2} LICENSE
 mkdir -p %{name}-%{version}
 cd %{name}-%{version}
 
@@ -53,6 +55,7 @@ DESKEOF
 desktop-file-validate %{buildroot}%{_datadir}/applications/%{name}.desktop
 
 %files
+%license LICENSE
 %{_bindir}/%{name}
 %{_libdir}/%{name}/
 %{_datadir}/applications/%{name}.desktop

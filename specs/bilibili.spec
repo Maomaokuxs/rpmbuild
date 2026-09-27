@@ -9,10 +9,11 @@ Summary:        Bilibili desktop client for Linux
 
 # 上游声明：MIT 仅覆盖项目脚本，客户端二进制版权归上海宽娱所有，
 # 故本包标记为 Proprietary（见上游 README 免责声明）。
-License:        Proprietary
+License:        MIT
 URL:            https://github.com/msojocs/bilibili-linux
 Source0:        https://github.com/msojocs/bilibili-linux/releases/download/v1.19.0-1/bilibili-v1.19.0-1-x64.tar.gz
 Source1:        https://raw.githubusercontent.com/Maomaokuxs/rpmbuild/main/assets/bilibili/bilibili-icon.png
+Source2:        https://raw.githubusercontent.com/msojocs/bilibili-linux/master/LICENSE#/LICENSE
 
 BuildRequires:  desktop-file-utils
 BuildRequires:  chrpath
@@ -24,6 +25,7 @@ client, with region roaming support. Watch videos, live streams
 and messages on Linux.
 
 %prep
+cp %{SOURCE2} LICENSE
 mkdir -p %{name}-%{version}
 cd %{name}-%{version}
 
@@ -55,6 +57,7 @@ DESKEOF
 desktop-file-validate %{buildroot}%{_datadir}/applications/%{name}.desktop
 
 %files
+%license LICENSE
 %{_bindir}/%{name}
 %{_libdir}/%{name}/
 %{_datadir}/applications/%{name}.desktop

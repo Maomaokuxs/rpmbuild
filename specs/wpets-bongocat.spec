@@ -44,6 +44,7 @@ rm -rf %{buildroot}%{_bindir}/bongocat-5.0.2 %{buildroot}%{_libdir}/cmake
 find %{buildroot}%{_bindir} -type f ! -name 'bongocat' ! -name 'bongocat-find-devices' -delete 2>/dev/null || true
 
 %files
+%license LICENSE
 %{_bindir}/bongocat
 %{_bindir}/bongocat-find-devices
 %{_datadir}/bongocat/

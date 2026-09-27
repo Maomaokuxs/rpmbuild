@@ -3,7 +3,7 @@ Version:        4.14
 Release:        1%{?dist}
 Summary:        Include Btrfs snapshots in GRUB boot menu
 
-License:        GPL-3.0
+License:        GPL-3.0-only
 URL:            https://github.com/Antynea/grub-btrfs
 Source0:        https://github.com/Antynea/grub-btrfs/archive/refs/tags/v%{version}.tar.gz
 

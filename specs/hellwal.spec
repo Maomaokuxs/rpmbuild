@@ -17,6 +17,7 @@ into templates for your terminal, editor, Waybar, and more.
 
 %prep
 %setup -q -n hellwal-%{version}
+# (LICENSE in tarball)
 
 %build
 make CFLAGS="%{optflags}" LDFLAGS="-lm"
@@ -26,7 +27,7 @@ mkdir -p %{buildroot}%{_bindir}
 install -m 755 hellwal %{buildroot}%{_bindir}/hellwal
 
 %files
-%{_bindir}/hellwal
+%license LICENSE
 
 %changelog
 * Sat Sep 19 2026 Maomaokuxs <biyuanh@qq.com> - 1.0.8-1

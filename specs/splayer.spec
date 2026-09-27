@@ -11,6 +11,7 @@ License:        AGPL-3.0-only
 URL:            https://github.com/SPlayer-Dev/SPlayer
 Source0:        https://github.com/SPlayer-Dev/SPlayer/releases/download/v3.1.1/splayer-3.1.1-x64.tar.gz
 Source1:        https://raw.githubusercontent.com/Maomaokuxs/rpmbuild/main/assets/splayer/splayer-icon.png
+Source2:        https://raw.githubusercontent.com/SPlayer-Dev/SPlayer/dev/LICENSE#/LICENSE
 
 BuildRequires:  desktop-file-utils
 BuildRequires:  chrpath
@@ -23,6 +24,7 @@ cloud music drive, local library management and audio spectrum
 visualization.
 
 %prep
+cp %{SOURCE2} LICENSE
 mkdir -p %{name}-%{version}
 cd %{name}-%{version}
 
@@ -54,6 +56,7 @@ DESKEOF
 desktop-file-validate %{buildroot}%{_datadir}/applications/%{name}.desktop
 
 %files
+%license LICENSE
 %{_bindir}/%{name}
 %{_libdir}/%{name}/
 %{_datadir}/applications/%{name}.desktop

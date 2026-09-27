@@ -75,6 +75,7 @@ update-desktop-database -q %{_datadir}/applications || :
 update-desktop-database -q %{_datadir}/applications || :
 
 %files
+%license %{_libdir}/com.cmic.mcloud/LICENSE
 %{_libdir}/com.cmic.mcloud
 %{_datadir}/applications/com.cmic.mcloud.desktop
 %{_datadir}/icons/hicolor/*/apps/com.cmic.mcloud.png

@@ -10,6 +10,7 @@ Source2:        https://raw.githubusercontent.com/Maomaokuxs/rpmbuild/main/asset
 Source3:        https://raw.githubusercontent.com/Maomaokuxs/rpmbuild/main/assets/fcitx5-hud-paper/hud-paper/highlight.svg#/hud-paper-highlight.svg
 Source4:        https://raw.githubusercontent.com/Maomaokuxs/rpmbuild/main/assets/fcitx5-hud-paper/hud-paper-dark/theme.conf#/hud-paper-dark-theme.conf
 Source5:        https://raw.githubusercontent.com/Maomaokuxs/rpmbuild/main/assets/fcitx5-hud-paper/hud-paper-dark/panel.svg#/hud-paper-dark-panel.svg
+Source7:        https://raw.githubusercontent.com/Maomaokuxs/rpmbuild/main/LICENSE#/fcitx5-hud-paper-LICENSE
 Source6:        https://raw.githubusercontent.com/Maomaokuxs/rpmbuild/main/assets/fcitx5-hud-paper/hud-paper-dark/highlight.svg#/hud-paper-dark-highlight.svg
 
 BuildArch:      noarch
@@ -22,8 +23,7 @@ sync-waybar.sh from the Waybar/hellwal palette.
 Paper background with accent selection block.
 
 %prep
-
-%build
+install -m 644 %{SOURCE7} fcitx5-hud-paper-LICENSE
 
 %install
 mkdir -p %{buildroot}%{_datadir}/fcitx5/themes/hud-paper
@@ -36,6 +36,7 @@ install -m 644 %{SOURCE5} %{buildroot}%{_datadir}/fcitx5/themes/hud-paper-dark/p
 install -m 644 %{SOURCE6} %{buildroot}%{_datadir}/fcitx5/themes/hud-paper-dark/highlight.svg
 
 %files
+%license fcitx5-hud-paper-LICENSE
 %{_datadir}/fcitx5/themes/hud-paper/
 %{_datadir}/fcitx5/themes/hud-paper-dark/
 

@@ -11,6 +11,7 @@ License:        GPL-3.0-only
 URL:            https://github.com/Predidit/Kazumi
 Source0:        https://github.com/Predidit/Kazumi/releases/download/2.3.6/Kazumi_linux_2.3.6_amd64.tar.gz
 Source1:        https://raw.githubusercontent.com/Maomaokuxs/rpmbuild/main/assets/kazumi/kazumi-icon.png
+Source2:        https://raw.githubusercontent.com/Predidit/Kazumi/main/LICENSE#/LICENSE
 
 BuildRequires:  desktop-file-utils
 BuildRequires:  chrpath
@@ -22,6 +23,7 @@ supporting online streaming, danmaku comments and
 real-time super-resolution.
 
 %prep
+cp %{SOURCE2} LICENSE
 mkdir -p %{name}-%{version}
 cd %{name}-%{version}
 
@@ -53,6 +55,7 @@ DESKEOF
 desktop-file-validate %{buildroot}%{_datadir}/applications/%{name}.desktop
 
 %files
+%license LICENSE
 %{_bindir}/%{name}
 %{_libdir}/%{name}/
 %{_datadir}/applications/%{name}.desktop
