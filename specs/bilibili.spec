@@ -13,7 +13,7 @@ License:        MIT
 URL:            https://github.com/msojocs/bilibili-linux
 Source0:        https://github.com/msojocs/bilibili-linux/releases/download/v1.19.0-3/bilibili-v1.19.0-3-x64.tar.gz
 Source1:        https://raw.githubusercontent.com/Maomaokuxs/rpmbuild/main/assets/bilibili/bilibili-icon.png
-Source2:        https://raw.githubusercontent.com/msojocs/bilibili-linux/master/LICENSE#/LICENSE
+Source2:        https://raw.githubusercontent.com/msojocs/bilibili-linux/master/license#/LICENSE
 
 BuildRequires:  desktop-file-utils
 BuildRequires:  chrpath
