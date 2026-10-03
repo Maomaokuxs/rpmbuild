@@ -1,6 +1,6 @@
 Name:           fcitx5-hud-paper
 Version:        1.0
-Release:        2%{?dist}
+Release:        3%{?dist}
 Summary:        Hud Paper fcitx5 themes (light and dark)
 
 License:        MIT
@@ -41,6 +41,8 @@ install -m 644 %{SOURCE6} %{buildroot}%{_datadir}/fcitx5/themes/hud-paper-dark/h
 %{_datadir}/fcitx5/themes/hud-paper-dark/
 
 %changelog
+* Sat Oct 03 2026 Maomaokuxs <biyuanh@qq.com> - 1.0-3
+- Rebuild with updated theme files (1.0-2 was built Sep 28 with old content)
 * Sat Oct 03 2026 Maomaokuxs <biyuanh@qq.com> - 1.0-2
 - Update theme files: panel r=6, highlight r=4, TextMargin unified
 * Sun Sep 20 2026 Maomaokuxs <biyuanh@qq.com> - 1.0-1
