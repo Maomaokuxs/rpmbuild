@@ -10,7 +10,7 @@ Source2:        https://raw.githubusercontent.com/Maomaokuxs/rpmbuild/main/asset
 Source3:        https://raw.githubusercontent.com/Maomaokuxs/rpmbuild/main/assets/fcitx5-hud-paper/hud-paper/highlight.svg#/hud-paper-highlight.svg
 Source4:        https://raw.githubusercontent.com/Maomaokuxs/rpmbuild/main/assets/fcitx5-hud-paper/hud-paper-dark/theme.conf#/hud-paper-dark-theme.conf
 Source5:        https://raw.githubusercontent.com/Maomaokuxs/rpmbuild/main/assets/fcitx5-hud-paper/hud-paper-dark/panel.svg#/hud-paper-dark-panel.svg
-Source7:        https://raw.githubusercontent.com/Maomaokuxs/rpmbuild/main/LICENSE#/fcitx5-hud-paper-LICENSE
+Source7:        https://raw.githubusercontent.com/Maomaokuxs/fcitx5-hud-paper/main/LICENSE#/fcitx5-hud-paper-LICENSE
 Source6:        https://raw.githubusercontent.com/Maomaokuxs/rpmbuild/main/assets/fcitx5-hud-paper/hud-paper-dark/highlight.svg#/hud-paper-dark-highlight.svg
 
 BuildArch:      noarch
