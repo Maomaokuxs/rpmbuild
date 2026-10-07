@@ -27,13 +27,13 @@ assets/<pkg>/           # 图标、LICENSE 等（spec 通过 raw.githubuserconte
 
 | 包名 | 版本 | 说明 |
 | --- | --- | --- |
-| kazumi | 2.3.4 | 二次元追番 |
-| hmcl | 3.16.3 | Minecraft 启动器 |
+| kazumi | 2.3.8 | 二次元追番 |
+| hmcl | 3.16.4 | Minecraft 启动器 |
 | bilibili | 1.19.0 | Bilibili 客户端 |
-| miyu | 0.6.2 | 终端 AI 助手 |
+| miyu | 0.7.0 | 终端 AI 助手 |
 | splayer | 3.1.1 | 音乐播放器 |
 | splayer-next | 1.1.0 | 音乐播放器 |
-| rime-ice | 2026.06.30 | 雾凇拼音 |
+| rime-ice | 2026.10.05 | 雾凇拼音 |
 | grub-btrfs | 4.14 | GRUB Btrfs 快照 |
 | waypaper | 2.9 | 壁纸管理器 |
 | wpets-bongocat | 5.0.2 | 键盘跟手猫咪挂件 |
@@ -55,18 +55,20 @@ assets/<pkg>/           # 图标、LICENSE 等（spec 通过 raw.githubuserconte
 | python3-materialyoucolor | 3.0.4 | Material You 纯 Python 算法库 |
 | python3-screeninfo | 0.8.1 | 屏幕信息查询库 |
 | python3-imageio-ffmpeg | 0.6.0 | Python FFmpeg 封装（含静态二进制） |
-| sarasa-gothic-fonts | 1.0.41 | 更纱黑体 CJK 编程字体 |
+| sarasa-gothic-fonts | 1.0.42 | 更纱黑体 CJK 编程字体 |
 | awww | 0.12.1 | Wayland 动态壁纸守护进程 |
 | starship | 1.26.0 | 极简快速的 shell 提示符 |
 | lxgw-wenkai | 1.522 | 霞鹜文楷 CJK 字体（常规+等宽） |
-| sarasa-mono-fonts | 1.0.41 | 更纱等宽 SC（+j/k/tc/hc/cl 子包） |
-| sarasa-term-fonts | 1.0.41 | 更纱终端 SC（+j/k/tc/hc/cl 子包） |
-| sarasa-all-fonts | 1.0.41 | 更纱全集单文件完整包 |
+| sarasa-mono-fonts | 1.0.42 | 更纱等宽 SC（+j/k/tc/hc/cl 子包） |
+| sarasa-term-fonts | 1.0.42 | 更纱终端 SC（+j/k/tc/hc/cl 子包） |
+| sarasa-all-fonts | 1.0.42 | 更纱全集单文件完整包 |
 | maple-mono-nf-cn | 7.9 | Maple 代码字体中文图标版 |
 | iosevka-term-nerd-fonts | 3.5.1 | Iosevka 终端图标字体（81 字形） |
 | iosevka-nerd-fonts | 3.5.1 | Iosevka 标准图标字体（81 字形） |
-| flclash | 0.8.98 | 跨平台代理客户端 |
-| linglong-store | 3.6.0 | 玲珑应用商店社区版 |
+| flclash | 0.8.99 | 跨平台代理客户端 |
+| linglong-store | 3.7.0 | 玲珑应用商店社区版 |
+| lazycat-terminal | 1.1.11 | Hackable 终端模拟器（标签页/分屏/透明背景） |
+| gpu-screen-recorder | 6.1.2 | ShadowPlay 式 GPU 录屏 |
 
 ## 许可
 
