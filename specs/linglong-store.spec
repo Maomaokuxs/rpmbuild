@@ -1,8 +1,8 @@
 %global debug_package %{nil}
 
 Name:           linglong-store
-Version:        3.6.0
-Release:        3%{?dist}
+Version:        3.7.0
+Release:        1%{?dist}
 Summary:        Linglong application store (community edition)
 
 License:        MIT
@@ -54,6 +54,9 @@ desktop-file-validate %{buildroot}%{_datadir}/applications/linglong-store.deskto
 %{_datadir}/metainfo/linglong-store.appdata.xml
 
 %changelog
+* Wed Oct 07 2026 Maomaokuxs <biyuanh@qq.com> - 3.7.0-1
+- Update to 3.7.0
+
 * Thu Sep 24 2026 Maomaokuxs <biyuanh@qq.com> - 3.6.0-3
 - Move app dir to /usr/lib (repo path standard)
 

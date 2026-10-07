@@ -64,8 +64,9 @@ desktop-file-validate %{buildroot}%{_datadir}/applications/%{name}.desktop
 %{_datadir}/icons/hicolor/256x256/apps/%{name}.png
 
 %changelog
-* Wed Sep 30 2026 Maomaokuxs <biyuanh@qq.com> - 1.19.0-3
-- Update to upstream revision 1.19.0-3
+* Mon Oct 05 2026 Maomaokuxs <biyuanh@qq.com> - 1.19.0-3
+- Update to upstream v1.19.0-3
+
 * Tue Sep 22 2026 Maomaokuxs <biyuanh@qq.com> - 1.19.0-2
 - Enrich package metadata (summary, description, license)
 

@@ -4,8 +4,8 @@
 %global __provides_exclude ^(%{_datadir}/%{name}/.*\\.so)
 
 Name:           flclash
-Version:        0.8.98
-Release:        3%{?dist}
+Version:        0.8.99
+Release:        1%{?dist}
 Summary:        Cross-platform proxy client built with Flutter
 
 License:        GPL-3.0-only
@@ -52,6 +52,9 @@ desktop-file-validate %{buildroot}%{_datadir}/applications/FlClash.desktop
 %{_datadir}/metainfo/
 
 %changelog
+* Mon Oct 05 2026 Maomaokuxs <biyuanh@qq.com> - 0.8.99-1
+- Update to 0.8.99
+
 * Thu Sep 24 2026 Maomaokuxs <biyuanh@qq.com> - 0.8.98-3
 - Fix dangling /usr/bin symlink (absolute libdir path)
 

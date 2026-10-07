@@ -7,9 +7,9 @@ Release:        1%{?dist}
 Summary:        2D anime-style AI assistant in your terminal
 
 License:        MIT
-URL:            https://github.com/SHORiN-KiWATA/miyu-agent
+URL:            https://github.com/SHORiN-KiWATA/Miyu
 
-Source0:        https://github.com/SHORiN-KiWATA/miyu-agent/releases/download/v%{version}/miyu-%{version}-%{pkgrel}-x86_64.pkg.tar.zst
+Source0:        https://github.com/SHORiN-KiWATA/Miyu/releases/download/v%{version}/miyu-%{version}-%{pkgrel}-x86_64.pkg.tar.zst
 
 %description
 Miyu is a 2D anime-style AI assistant living in your terminal,
@@ -35,8 +35,9 @@ cp -a usr/share/miyu/* %{buildroot}%{_datadir}/miyu/ 2>/dev/null || true
 %{_datadir}/miyu/
 
 %changelog
-* Wed Sep 30 2026 Maomaokuxs <biyuanh@qq.com> - 0.7.0-1
-- Update to 0.7.0 (upstream repo renamed to miyu-agent)
+* Sat Oct 03 2026 Maomaokuxs <biyuanh@qq.com> - 0.7.0-1
+- Update to 0.7.0
+
 * Tue Sep 22 2026 Maomaokuxs <biyuanh@qq.com> - 0.6.2-1
 - Update to 0.6.2 (upstream pkgrel is now 1)
 

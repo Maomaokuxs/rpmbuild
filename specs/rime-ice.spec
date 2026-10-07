@@ -1,7 +1,7 @@
 %global debug_package %{nil}
 
 Name:           rime-ice
-Version:        2026.06.30
+Version:        2026.10.05
 Release:        1%{?dist}
 Summary:        Simplified Chinese input schema for Rime (Wusong Pinyin)
 
@@ -60,6 +60,12 @@ fi
 %{_bindir}/rime-ice-enable
 
 %changelog
+* Wed Oct 07 2026 Maomaokuxs <biyuanh@qq.com> - 2026.10.05-1
+- Update nightly snapshot to 2026.10.05
+
+* Sat Oct 03 2026 Maomaokuxs <biyuanh@qq.com> - 2026.09.25-1
+- Update nightly snapshot to 2026.09.25
+
 * Fri Aug 28 2026 Maomaokuxs <biyuanh@qq.com> - 2026.06.30-1
 - Update nightly snapshot to 2026.06.30
 

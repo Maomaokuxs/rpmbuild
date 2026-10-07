@@ -1,5 +1,5 @@
 Name:           sarasa-gothic-fonts
-Version:        1.0.41
+Version:        1.0.42
 Release:        1%{?dist}
 Summary:        Sarasa Gothic CJK programming font
 
@@ -32,5 +32,8 @@ install -m 644 Sarasa-*.ttc %{buildroot}%{_datadir}/fonts/sarasa-gothic/
 %{_datadir}/fonts/sarasa-gothic/
 
 %changelog
+* Sat Oct 03 2026 Maomaokuxs <biyuanh@qq.com> - 1.0.42-1
+- Update to 1.0.42
+
 * Wed Sep 23 2026 Maomaokuxs <biyuanh@qq.com> - 1.0.41-1
 - Initial package (clone terra's fonts into biyuan/software)
