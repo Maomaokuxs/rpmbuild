@@ -1,6 +1,6 @@
 Name:           python3-fast-colorthief
 Version:        0.0.5
-Release:        1%{?dist}
+Release:        2%{?dist}
 Summary:        Dominant colors in image
 
 License:        MIT
@@ -9,6 +9,11 @@ Source0:        https://files.pythonhosted.org/packages/46/2b/9d4ae88af21fc22a87
 
 BuildRequires:  python3-devel
 BuildRequires:  pyproject-rpm-macros
+BuildRequires:  cmake
+BuildRequires:  gcc
+
+# C extension, no debuginfo needed for pure-python wrapper
+%global debug_package %{nil}
 
 %description
 fast-colorthief extracts dominant colors from images.
