@@ -1,6 +1,6 @@
 Name:           python3-fast-colorthief
 Version:        0.0.5
-Release:        3%{?dist}
+Release:        4%{?dist}
 Summary:        Dominant colors in image
 
 License:        MIT
@@ -11,6 +11,7 @@ BuildRequires:  python3-devel
 BuildRequires:  pyproject-rpm-macros
 BuildRequires:  cmake
 BuildRequires:  gcc
+BuildRequires:  gcc-c++
 
 # C extension, no debuginfo needed for pure-python wrapper
 %global debug_package %{nil}
