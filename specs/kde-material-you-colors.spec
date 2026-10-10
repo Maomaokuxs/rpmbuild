@@ -3,7 +3,7 @@
 
 Name:           kde-material-you-colors
 Version:        2.2.0
-Release:        1%{?dist}
+Release:        2%{?dist}
 Summary:        Automatic Material You color scheme generator for KDE Plasma
 
 License:        GPL-3.0-or-later
@@ -30,7 +30,6 @@ dark themes for Plasma, Konsole, and pywal.
 
 %prep
 %setup -q -n kde-material-you-colors-%{version}
-cp LICENSE .
 
 %build
 %pyproject_wheel
