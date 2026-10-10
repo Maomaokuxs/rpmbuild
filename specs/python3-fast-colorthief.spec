@@ -1,6 +1,6 @@
 Name:           python3-fast-colorthief
 Version:        0.0.5
-Release:        2%{?dist}
+Release:        3%{?dist}
 Summary:        Dominant colors in image
 
 License:        MIT
@@ -21,6 +21,8 @@ Required by kde-material-you-colors.
 
 %prep
 %autosetup -n fast-colorthief-%{version} -p1
+# F45 的 CMake 移除了对 <3.5 的兼容，上游写死了老版本
+sed -i "s/cmake_minimum_required(VERSION [0-9.]*)/cmake_minimum_required(VERSION 3.5)/" CMakeLists.txt
 
 %generate_buildrequires
 %pyproject_buildrequires

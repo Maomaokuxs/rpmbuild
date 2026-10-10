@@ -1,6 +1,6 @@
 Name:           python3-pywal16
 Version:        3.8.15
-Release:        2%{?dist}
+Release:        3%{?dist}
 Summary:        Generate and change color-schemes on the fly
 
 License:        MIT
@@ -33,7 +33,7 @@ on the fly. Required by kde-material-you-colors.
 %files -f %{pyproject_files}
 %license LICENSE.md
 %{_bindir}/wal
-%{_mandir}/man1/wal.1*
+/usr/man/man1/wal.1*
 
 %changelog
 * Sat Oct 10 2026 Maomaokuxs <biyuanh@qq.com> - 3.8.15-1
