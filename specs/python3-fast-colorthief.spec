@@ -1,6 +1,6 @@
 Name:           python3-fast-colorthief
 Version:        0.0.5
-Release:        5%{?dist}
+Release:        6%{?dist}
 Summary:        Dominant colors in image
 
 License:        MIT
@@ -33,7 +33,7 @@ find . -name CMakeLists.txt -exec sed -i "s/cmake_minimum_required(VERSION [0-9.
 
 %install
 %pyproject_install
-%pyproject_save_files colorthief
+%pyproject_save_files fast_colorthief
 
 %files -f %{pyproject_files}
 %license LICENSE
