@@ -26,7 +26,6 @@ supporting swaybg, swww, feh, hyprpaper, and other backends.
 
 %prep
 %setup -q
-cp LICENSE .
 
 %build
 

@@ -10,6 +10,9 @@ Source0:        https://files.pythonhosted.org/packages/5c/20/051723abec22086f7d
 BuildRequires:  python3-devel
 BuildRequires:  pyproject-rpm-macros
 
+# pure Python, no debuginfo
+%global debug_package %{nil}
+
 %description
 pywal16 generates color schemes from images and applies them
 on the fly. Required by kde-material-you-colors.
