@@ -1,6 +1,6 @@
 Name:           hellwal
 Version:        1.0.8
-Release:        1%{?dist}
+Release:        2%{?dist}
 Summary:        Fast, extensible color palette generator in C
 
 License:        MIT
@@ -28,6 +28,7 @@ install -m 755 hellwal %{buildroot}%{_bindir}/hellwal
 
 %files
 %license LICENSE
+%{_bindir}/hellwal
 
 %changelog
 * Sat Sep 19 2026 Maomaokuxs <biyuanh@qq.com> - 1.0.8-1
