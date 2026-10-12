@@ -1,0 +1,8 @@
+[Desktop Entry]
+Type=Application
+Name=AB Download Manager
+Comment=A Download Manager that speeds up your downloads
+Exec=/usr/bin/abdownloadmanager
+Icon=abdownloadmanager
+Categories=Network;FileTransfer;
+Terminal=false
