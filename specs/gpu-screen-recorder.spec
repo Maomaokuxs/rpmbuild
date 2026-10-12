@@ -1,11 +1,11 @@
 Name:           gpu-screen-recorder
-Version:        6.1.2
-Release:        2%{?dist}
+Version:        6.1.3
+Release:        1%{?dist}
 Summary:        ShadowPlay-like GPU screen recorder for Linux
 
 License:        GPL-3.0-only
 URL:            https://git.dec05eba.com/gpu-screen-recorder/about
-Source0:        https://dec05eba.com/snapshot/gpu-screen-recorder.git.r1517.68dfeb9.tar.gz#/%{name}-%{version}.tar.gz
+Source0:        https://dec05eba.com/snapshot/gpu-screen-recorder.git.r1520.7f9405e.tar.gz#/%{name}-%{version}.tar.gz
 
 BuildRequires:  gcc
 BuildRequires:  gcc-c++
@@ -65,6 +65,8 @@ setcap cap_sys_admin+ep %{_bindir}/gsr-kms-server || :
 %{_mandir}/man1/gsr-cli.1*
 
 %changelog
+* Mon Oct 12 2026 Maomaokuxs <biyuanh@qq.com> - 6.1.3-1
+- Update snapshot to r1520.7f9405e (includes upstream 6.1.3)
 * Wed Sep 30 2026 Maomaokuxs <biyuanh@qq.com> - 6.1.2-2
 - Update snapshot to r1517.68dfeb9
 * Wed Sep 23 2026 Maomaokuxs <biyuanh@qq.com> - 6.1.2-1
