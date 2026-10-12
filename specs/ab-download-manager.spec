@@ -3,7 +3,7 @@
 
 Name:           ab-download-manager
 Version:        1.11.0
-Release:        1%{?dist}
+Release:        2%{?dist}
 Summary:        A Download Manager that speeds up your downloads
 
 License:        Apache-2.0
@@ -55,6 +55,12 @@ tar -xf build/ci-release/binaries/ABDownloadManager_*_linux_x64.tar.gz
 mkdir -p %{buildroot}/opt/abdownloadmanager
 cp -r ABDownloadManager/* %{buildroot}/opt/abdownloadmanager/
 
+# dbus-java forbids two transport providers for the same protocol on the
+# classpath (upstream bundles both junixsocket and native-unixsocket, which
+# crashes D-Bus init with TransportRegistrationException when opening the
+# directory picker). Drop the native one; junixsocket supports FD passing.
+rm -f %{buildroot}/opt/abdownloadmanager/lib/app/dbus-java-transport-native-unixsocket-*.jar
+
 # Install icon
 install -Dm644 desktop/app/icons/icon.png %{buildroot}%{_datadir}/icons/hicolor/512x512/apps/abdownloadmanager.png
 
@@ -73,5 +79,9 @@ ln -s ../../opt/abdownloadmanager/bin/ABDownloadManager %{buildroot}%{_bindir}/a
 /usr/bin/abdownloadmanager
 
 %changelog
+* Mon Oct 12 2026 Maomaokuxs <biyuanh@qq.com> - 1.11.0-2
+- Drop dbus-java-transport-native-unixsocket jar: two UNIX socket transport
+  providers on the classpath crash D-Bus init (TransportRegistrationException)
+  when opening the directory picker; keep junixsocket which supports FD passing
 * Mon Oct 12 2026 Maomaokuxs <biyuanh@qq.com> - 1.11.0-1
 - Initial package
