@@ -5,25 +5,28 @@ Summary:        Smart boundary-aware screenshot tool for Linux Wayland
 
 License:        Apache-2.0
 URL:            https://github.com/kregonia/babry
-Source0:        https://github.com/kregonia/babry/releases/download/v%{version}/babry-amd64-linux
-Source1:        https://raw.githubusercontent.com/kregonia/babry/v%{version}/LICENSE
+Source0:        https://raw.githubusercontent.com/kregonia/babry/v%{version}/LICENSE
 
-BuildArch:      x86_64
+ExclusiveArch:  x86_64
 
 Requires:       fontconfig
 Requires:       libxkbcommon
 Requires:       libwayland-client
 
+BuildRequires:  curl
+
 %description
 Babry is a smart boundary-aware screenshot tool for Linux Wayland.
 
 %prep
+curl -sL -o babry-amd64-linux https://github.com/kregonia/babry/releases/download/v%{version}/babry-amd64-linux
+chmod +x babry-amd64-linux
 
 %build
 
 %install
-install -Dm755 %{SOURCE0} %{buildroot}%{_bindir}/babry
-install -Dm644 %{SOURCE1} %{buildroot}%{_licensedir}/%{name}/LICENSE
+install -Dm755 babry-amd64-linux %{buildroot}%{_bindir}/babry
+install -Dm644 %{SOURCE0} %{buildroot}%{_licensedir}/%{name}/LICENSE
 
 %files
 %{_bindir}/babry
