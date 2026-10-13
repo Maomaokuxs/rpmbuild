@@ -1,7 +1,7 @@
 %global debug_package %{nil}
 
 Name:           lazycat-terminal
-Version:        1.1.11
+Version:        1.1.12
 Release:        1%{?dist}
 Summary:        Hackable terminal emulator with tabs, splits and transparent background
 
@@ -50,5 +50,8 @@ install -Dm644 config.conf %{buildroot}%{_datadir}/lazycat-terminal/config.conf
 %{_datadir}/lazycat-terminal/
 
 %changelog
+* Tue Oct 13 2026 Maomaokuxs <biyuanh@qq.com> - 1.1.12-1
+- Update to 1.1.12
+
 * Sat Oct 03 2026 Maomaokuxs <biyuanh@qq.com> - 1.1.11-1
 - Initial package
