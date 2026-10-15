@@ -2,8 +2,8 @@
 %global jbr_dir jbrsdk_jcef-25.0.3-linux-x64-b508.4
 
 Name:           ab-download-manager
-Version:        1.11.0
-Release:        2%{?dist}
+Version:        1.11.1
+Release:        1%{?dist}
 Summary:        A Download Manager that speeds up your downloads
 
 License:        Apache-2.0
@@ -79,6 +79,8 @@ ln -s ../../opt/abdownloadmanager/bin/ABDownloadManager %{buildroot}%{_bindir}/a
 /usr/bin/abdownloadmanager
 
 %changelog
+* Thu Oct 15 2026 Maomaokuxs <biyuanh@qq.com> - 1.11.1-1
+- Update to 1.11.1
 * Mon Oct 12 2026 Maomaokuxs <biyuanh@qq.com> - 1.11.0-2
 - Drop dbus-java-transport-native-unixsocket jar: two UNIX socket transport
   providers on the classpath crash D-Bus init (TransportRegistrationException)

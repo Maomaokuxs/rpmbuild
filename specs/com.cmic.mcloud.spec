@@ -3,13 +3,13 @@
 %global __arch_install_post %{nil}
 
 Name:           com.cmic.mcloud
-Version:        1.1.1
-Release:        3%{?dist}
+Version:        1.1.2
+Release:        1%{?dist}
 Summary:        China Mobile Cloud Drive desktop client
 
 License:        Proprietary
 URL:            https://yun.139.com/
-Source0:        https://yun.mcloud.139.com/mCloudPc/kylinV111/com.cmic.mcloud_1.1.1_amd64.deb
+Source0:        https://yun.mcloud.139.com/mCloudPc/kylinV111/com.cmic.mcloud_1.1.2_amd64.deb
 
 BuildRequires:  binutils
 BuildRequires:  desktop-file-utils
@@ -84,6 +84,7 @@ update-desktop-database -q %{_datadir}/applications || :
 %{_datadir}/icons/hicolor/*/apps/com.cmic.mcloud.png
 
 %changelog
-* Thu Sep 24 2026 Maomaokuxs <biyuanh@qq.com> - 1.1.1-3
+* Thu Oct 15 2026 Maomaokuxs <biyuanh@qq.com> - 1.1.2-1
+- Update to 1.1.2
 - Move app dir to /usr/lib (repo path standard)
 - Icon via hicolor theme + Network;FileTransfer categories (fixes missing launcher icon)
