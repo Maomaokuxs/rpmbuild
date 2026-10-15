@@ -185,10 +185,39 @@ def _mcloud(owner, repo, spec_ver):
     return max(found, key=ver_key)
 
 
+def _gpu_screen_recorder(owner, repo, spec_ver):
+    """gpu-screen-recorder: dec05eba 自建 git，用 repo.dec05eba.com 镜像取最大 tag。"""
+    key = ("dec05eba", "gpu-screen-recorder")
+    if key in _cache:
+        return _cache[key]
+    v = None
+    try:
+        out = subprocess.run(
+            ["git", "ls-remote", "--tags", "--refs",
+             "https://repo.dec05eba.com/gpu-screen-recorder"],
+            capture_output=True, text=True, timeout=30,
+        ).stdout
+    except Exception as e:
+        print(f"  ! gpu-screen-recorder ls-remote 失败: {e}", file=sys.stderr)
+        _cache[key] = None
+        return None
+    tags = set()
+    for line in out.splitlines():
+        m = re.search(r"refs/tags/(.+)$", line)
+        if m:
+            t = m.group(1)
+            if re.match(r"^[vV]?\d", t):
+                tags.add(t)
+    v = max(tags, key=ver_key) if tags else None
+    _cache[key] = v
+    return v
+
+
 SPECIAL = {
     "rime-ice": _rime_ice,
     "python3-materialyoucolor": _pypi("materialyoucolor"),
     "com.cmic.mcloud": _mcloud,
+    "gpu-screen-recorder": _gpu_screen_recorder,
 }
 
 SKIP_RE = re.compile(r"yun\.139\.com|dec05eba\.com|pypi\.org")
