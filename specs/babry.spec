@@ -1,5 +1,5 @@
 Name:           babry
-Version:        0.1.1
+Version:        0.1.4
 Release:        1%{?dist}
 Summary:        Smart boundary-aware screenshot tool for Linux Wayland
 
@@ -33,6 +33,8 @@ install -Dm644 %{SOURCE0} %{buildroot}%{_licensedir}/%{name}/LICENSE
 %{_licensedir}/%{name}/LICENSE
 
 %changelog
+* Sat Oct 17 2026 Biyuan <biyuan@example.com> - 0.1.4-1
+- Update to 0.1.4
 * Thu Oct 15 2026 Biyuan <biyuan@example.com> - 0.1.1-1
 - Update to 0.1.1
 - Initial package

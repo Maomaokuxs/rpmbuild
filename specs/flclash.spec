@@ -4,7 +4,7 @@
 %global __provides_exclude ^(%{_datadir}/%{name}/.*\\.so)
 
 Name:           flclash
-Version:        0.9.0
+Version:        0.9.1
 Release:        1%{?dist}
 Summary:        Cross-platform proxy client built with Flutter
 
@@ -52,6 +52,8 @@ desktop-file-validate %{buildroot}%{_datadir}/applications/FlClash.desktop
 %{_datadir}/metainfo/
 
 %changelog
+* Sat Oct 17 2026 Maomaokuxs <biyuanh@qq.com> - 0.9.1-1
+- Update to 0.9.1
 * Thu Oct 15 2026 Maomaokuxs <biyuanh@qq.com> - 0.9.0-1
 - Update to 0.9.0
 - Update to 0.8.99
