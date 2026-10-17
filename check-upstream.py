@@ -213,11 +213,35 @@ def _gpu_screen_recorder(owner, repo, spec_ver):
     return v
 
 
+def _workbuddy(owner, repo, spec_ver):
+    """WorkBuddy：官方更新接口直接给版本号。
+    https://www.workbuddy.cn/v2/update?platform=workbuddy-linux-x64-rpm
+    接口版本号是 5.6.2.40046327 这种 4 段式，spec 里只用前 3 段。"""
+    key = ("workbuddy", "linux-x64-rpm")
+    if key in _cache:
+        return _cache[key]
+    v = None
+    try:
+        req = urllib.request.Request(
+            "https://www.workbuddy.cn/v2/update?platform=workbuddy-linux-x64-rpm",
+            headers=UA)
+        with urllib.request.urlopen(req, timeout=20) as r:
+            d = json.load(r)
+        parts = norm(d.get("version") or "").split(".")
+        if len(parts) >= 3:
+            v = ".".join(parts[:3])
+    except Exception as e:
+        print(f"  ! workbuddy 检查失败: {e}", file=sys.stderr)
+    _cache[key] = v
+    return v
+
+
 SPECIAL = {
     "rime-ice": _rime_ice,
     "python3-materialyoucolor": _pypi("materialyoucolor"),
     "com.cmic.mcloud": _mcloud,
     "gpu-screen-recorder": _gpu_screen_recorder,
+    "workbuddy": _workbuddy,
 }
 
 SKIP_RE = re.compile(r"yun\.139\.com|dec05eba\.com|pypi\.org")
