@@ -64,6 +64,7 @@ gtk-update-icon-cache -q %{_datadir}/icons/hicolor 2>/dev/null || :
 %files
 /opt/kingsoft/wps-office/
 %{_bindir}/et
+%{_bindir}/misc
 %{_bindir}/wpp
 %{_bindir}/wps
 %{_bindir}/wpspdf
