@@ -9,6 +9,7 @@ Source0:        https://github.com/hyprwm/hyprland-protocols/archive/refs/tags/v
 
 BuildArch:      noarch
 BuildRequires:  cmake
+BuildRequires:  gcc
 
 %description
 Wayland protocol extension XMLs for Hyprland (toplevel export,
