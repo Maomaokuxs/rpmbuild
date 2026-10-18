@@ -1,5 +1,5 @@
 Name:           lxgw-wenkai
-Version:        1.522
+Version:        1.530
 Release:        1%{?dist}
 Summary:        LXGW WenKai CJK font (regular and mono families)
 
@@ -35,5 +35,7 @@ install -m 644 %{SOURCE1} %{SOURCE2} %{SOURCE3} %{SOURCE4} %{SOURCE5} %{SOURCE6}
 %{_datadir}/fonts/lxgw-wenkai/
 
 %changelog
+* Sun Oct 18 2026 Wed Sep 23 2026 Maomaokuxs - 1.530-1
+- Update to 1.530
 * Wed Sep 23 2026 Maomaokuxs <biyuanh@qq.com> - 1.522-1
 - Initial package (6 TTFs: 3 weights x proportional/mono)

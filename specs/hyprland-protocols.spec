@@ -1,5 +1,5 @@
 Name:           hyprland-protocols
-Version:        0.7.1
+Version:        0.8.0
 Release:        1%{?dist}
 Summary:        Wayland protocol extensions for Hyprland
 
@@ -32,5 +32,7 @@ by hypridle/hyprlock builds.
 %{_datadir}/pkgconfig/hyprland-protocols.pc
 
 %changelog
+* Sun Oct 18 2026 Wed Sep 23 2026 Maomaokuxs - 0.8.0-1
+- Update to 0.8.0
 * Wed Sep 23 2026 Maomaokuxs <biyuanh@qq.com> - 0.7.1-1
 - Initial package (clone for biyuan/software)
