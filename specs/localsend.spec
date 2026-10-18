@@ -44,12 +44,15 @@ cp -a opt/localsend_app/. %{buildroot}%{_libdir}/localsend/
 ln -s %{_libdir}/localsend/localsend_app %{buildroot}%{_bindir}/localsend_app
 mkdir -p %{buildroot}%{_datadir}
 cp -a usr/share/. %{buildroot}%{_datadir}/
+# LICENSE 装到标准位置
+mkdir -p %{buildroot}%{_licensedir}/%{name}
+cp -a LICENSE %{buildroot}%{_licensedir}/%{name}/
 
 %check
 desktop-file-validate %{buildroot}%{_datadir}/applications/localsend_app.desktop
 
 %files
-%license LICENSE
+%license %{_licensedir}/%{name}/LICENSE
 %{_bindir}/localsend_app
 %{_libdir}/localsend/
 %{_datadir}/applications/localsend_app.desktop
